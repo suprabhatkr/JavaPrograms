@@ -1,0 +1,43 @@
+There are several classes:
+class A{}
+class B{}
+class C{}
+class D{}
+In the above case, we can name it any name like example.java
+A java program should contains atmost one public class, although can have any number of classes.
+
+If there is  public class, then filename should be that class name only. So, if we make our B class public, then we need to name it as B.java . 
+
+Class having main function and filename has no relation. 
+
+Class A{
+	P S main(String() args){
+		Super("A class main");
+	}
+}
+Class B{
+	P S main(String() args){
+		Super("B class main");				
+	}				
+}							
+Class C{
+	P S main(String() args)
+	{
+		Super("C class main");
+	}
+}
+Class D{
+}
+
+When we will run javac filename.java (as filename can be anything as no public class), then it will form 4 classes A.class,B.class,C.class,D.class So when I will run java A then main function of main will run main method of A and so for C and D. 
+
+If we will run java D, it will also give us error. And we will also get error for java filename.java 
+
+Points of this lecture:
+1. There can be atmost one public class in a file. 
+2. In case of no public class, file can be named anything .
+3. If many non public class has main file, then we will have to run all the classes which contains main separately. 
+4. Any class not containing main will give error in case of point no 3
+5. For naming the file, public class need not contains main file, but without main file, running the class will give error. Although no error will be in compiling the file. 
+6. Only classes containing main class can run. 
+
